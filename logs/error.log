@@ -1,0 +1,21 @@
+ [LOGGER]  24-04-08 17:04:79  error : Error E11000 duplicate key error collection: graphql-demo.users index: email_1 dup key: { email: "arpit.patel@acldigital.com" } 
+ [LOGGER]  24-04-08 17:04:33  error : Error String cannot represent value: { data: [Object], messgae: "User Created Successfully" } 
+ [LOGGER]  24-04-08 17:04:57  error : Error E11000 duplicate key error collection: graphql-demo.users index: email_1 dup key: { email: "arpit.patel@acldigital.com" } 
+ [LOGGER]  24-04-08 17:04:20  error : Error String cannot represent value: { data: {}, messgae: "User Created Successfully" } 
+ [LOGGER]  24-04-08 17:04:40  error : Error String cannot represent value: { data: [Object], messgae: "User Created Successfully" } 
+ [LOGGER]  24-04-08 17:04:06  error : Error String cannot represent value: { data: [Object], messgae: "User Created Successfully" } 
+ [LOGGER]  24-04-08 17:04:76  error : Error Field "create" of type "UserResponse" must have a selection of subfields. Did you mean "create { ... }"? 
+ [LOGGER]  24-04-08 17:04:01  error : Error Field "data" of type "User!" must have a selection of subfields. Did you mean "data { ... }"? 
+ [LOGGER]  24-04-08 17:04:69  error : Error Field "data" of type "User!" must have a selection of subfields. Did you mean "data { ... }"? 
+ [LOGGER]  24-04-08 17:04:66  error : Error Syntax Error: Expected Name, found <EOF>. 
+ [LOGGER]  24-04-08 17:04:44  error : Error Syntax Error: Expected Name, found <EOF>. 
+ [LOGGER]  24-04-08 17:04:100  error : Error Field "create" of type "UserResponse!" must have a selection of subfields. Did you mean "create { ... }"? 
+ [LOGGER]  24-04-08 17:04:56  error : Error E11000 duplicate key error collection: graphql-demo.users index: email_1 dup key: { email: "arpit.patel@acldigital.com" } 
+ [LOGGER]  24-04-08 17:04:44  error : Error E11000 duplicate key error collection: graphql-demo.users index: email_1 dup key: { email: "arpit.patel@acldigital.com" } 
+ [LOGGER]  24-04-08 17:04:36  error : Error E11000 duplicate key error collection: graphql-demo.users index: email_1 dup key: { email: "arpit.patel@acldigital.com" } 
+ [LOGGER]  24-04-08 17:04:09  error : Error E11000 duplicate key error collection: graphql-demo.users index: email_1 dup key: { email: "arpit.patel@acldigital.com" } 
+ [LOGGER]  24-04-08 17:04:25  error : Error E11000 duplicate key error collection: graphql-demo.users index: email_1 dup key: { email: "arpit.patel@acldigital.com" } 
+ [LOGGER]  24-04-08 17:04:89  error : Error E11000 duplicate key error collection: graphql-demo.users index: email_1 dup key: { email: "arpit.patel@acldigital.com" } 
+ [LOGGER]  24-04-08 17:04:28  error : Error E11000 duplicate key error collection: graphql-demo.users index: email_1 dup key: { email: "arpit.patel@acldigital.com" } 
+ [LOGGER]  24-04-08 17:04:04  error : Error E11000 duplicate key error collection: graphql-demo.users index: email_1 dup key: { email: "arpit.patel@acldigital.com" } 
+ [LOGGER]  24-04-08 17:04:54  error : Error E11000 duplicate key error collection: graphql-demo.users index: email_1 dup key: { email: "arpit.patel@acldigital.com" } 
