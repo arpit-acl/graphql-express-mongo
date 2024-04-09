@@ -19,3 +19,318 @@
  [LOGGER]  24-04-08 17:04:28  error : Error E11000 duplicate key error collection: graphql-demo.users index: email_1 dup key: { email: "arpit.patel@acldigital.com" } 
  [LOGGER]  24-04-08 17:04:04  error : Error E11000 duplicate key error collection: graphql-demo.users index: email_1 dup key: { email: "arpit.patel@acldigital.com" } 
  [LOGGER]  24-04-08 17:04:54  error : Error E11000 duplicate key error collection: graphql-demo.users index: email_1 dup key: { email: "arpit.patel@acldigital.com" } 
+ [LOGGER]  24-04-09 10:04:14  error : Error Cannot return null for non-nullable field Mutation.login. 
+ [LOGGER]  24-04-09 10:04:73  error : Error Cannot return null for non-nullable field Mutation.login. 
+ [LOGGER]  24-04-09 10:04:89  error : Error Cannot return null for non-nullable field Mutation.login. 
+ [LOGGER]  24-04-09 10:04:12  error : Error Cannot return null for non-nullable field Mutation.login. 
+ [LOGGER]  24-04-09 10:04:59  error : Error Cannot return null for non-nullable field Mutation.login. 
+ [LOGGER]  24-04-09 11:04:46  error : Error Cannot return null for non-nullable field Mutation.login. 
+ [LOGGER]  24-04-09 11:04:71  error : Error Cannot return null for non-nullable field Mutation.login. 
+ [LOGGER]  24-04-09 11:04:13  error : Error Cannot return null for non-nullable field Mutation.login. 
+ [LOGGER]  24-04-09 11:04:97  error : Error Exception in user details fetch 
+ [LOGGER]  24-04-09 11:04:93  error : Error Exception in user details fetch 
+ [LOGGER]  24-04-09 11:04:42  error : Error Exception in user details fetch 
+ [LOGGER]  24-04-09 11:04:69  error : Error Exception in user details fetch 
+ [LOGGER]  24-04-09 12:04:88  error : Error Exception in user details fetch 
+ [LOGGER]  24-04-09 13:04:21  error : Error Cannot query field "password" on type "User". 
+ [LOGGER]  24-04-09 13:04:21  error : Error Cannot query field "password" on type "User". 
+ [LOGGER]  24-04-09 13:04:26  error : Error Cannot query field "password" on type "User". 
+ [LOGGER]  24-04-09 13:04:07  error : Error Cannot query field "password" on type "User".
+
+GraphQL request:7:9
+6 |         email
+7 |         password
+  |         ^
+8 |         token 
+ [LOGGER]  24-04-09 13:04:99  error : Error Cannot query field "password" on type "User".
+
+GraphQL request:7:9
+6 |         email
+7 |         password
+  |         ^
+8 |         token 
+ [LOGGER]  24-04-09 13:04:99  error : Error There can be only one operation named "UserDetails".
+
+GraphQL request:1:7
+1 | query UserDetails {
+  |       ^
+2 |     userDetails {
+
+GraphQL request:14:7
+13 |
+14 | query UserDetails {
+   |       ^
+15 |     userDetails { 
+ [LOGGER]  24-04-09 13:04:20  error : Error Cannot query field "password" on type "User".
+
+GraphQL request:7:9
+6 |         email
+7 |         password
+  |         ^
+8 |         token 
+ [LOGGER]  24-04-09 13:04:45  error : Error Cannot query field "password" on type "User".
+
+GraphQL request:7:9
+6 |         email
+7 |         password
+  |         ^
+8 |         token 
+ [LOGGER]  24-04-09 13:04:35  error : Error Field "createdBy" of type "User" must have a selection of subfields. Did you mean "createdBy { ... }"?
+
+GraphQL request:8:9
+7 |         token
+8 |         createdBy
+  |         ^
+9 |     } 
+ [LOGGER]  24-04-09 13:04:64  error : Error Cannot query field "create" on type "Mutation".
+
+GraphQL request:2:5
+1 | mutation {
+2 |     create(
+  |     ^
+3 |         input: { 
+ [LOGGER]  24-04-09 13:04:56  error : Error Cannot query field "password" on type "User".
+
+GraphQL request:15:13
+14 |             email
+15 |             password
+   |             ^
+16 |         } 
+ [LOGGER]  24-04-09 13:04:65  error : Error Cannot query field "password" on type "User".
+
+GraphQL request:15:13
+14 |             email
+15 |             password
+   |             ^
+16 |         } 
+ [LOGGER]  24-04-09 13:04:57  error : Error E11000 duplicate key error collection: graphql-demo.users index: email_1 dup key: { email: "arpit.patel@acldigital.com" }
+
+GraphQL request:11:9
+10 |         message
+11 |         data {
+   |         ^
+12 |             firstName 
+ [LOGGER]  24-04-09 14:04:55  error : Error Cannot return null for non-nullable field authResponse.data.
+
+GraphQL request:6:9
+5 |         message
+6 |         data {
+  |         ^
+7 |             firstName 
+ [LOGGER]  24-04-09 14:04:08  error : Error Cannot return null for non-nullable field authResponse.data.
+
+GraphQL request:6:9
+5 |         message
+6 |         data {
+  |         ^
+7 |             firstName 
+ [LOGGER]  24-04-09 15:04:14  error : Error Error: Wrong credetials
+
+GraphQL request:2:5
+1 | mutation {
+2 |     login(
+  |     ^
+3 |         input: { email: "arpit.patel11111@acldigital.com", password: "Test@123aa" } 
+ [LOGGER]  24-04-09 15:04:84  error : Error Error: Wrong credetials
+
+GraphQL request:2:5
+1 | mutation {
+2 |     login(
+  |     ^
+3 |         input: { email: "arpit.patel11111@acldigital.com", password: "Test@123aa" } 
+ [LOGGER]  24-04-09 15:04:28  error : Error Error: Wrong credetials
+
+GraphQL request:2:5
+1 | mutation {
+2 |     login(
+  |     ^
+3 |         input: { email: "arpit.patel11111@acldigital.com", password: "Test@123aa" } 
+ [LOGGER]  24-04-09 15:04:02  error : Error Error: Wrong credetials
+
+GraphQL request:2:5
+1 | mutation {
+2 |     login(
+  |     ^
+3 |         input: { email: "arpit.patel11111@acldigital.com", password: "Test@123aa" } 
+ [LOGGER]  24-04-09 15:04:61  error : Error Error: Wrong credetials
+
+GraphQL request:2:5
+1 | mutation {
+2 |     login(
+  |     ^
+3 |         input: { email: "arpit.patel11111@acldigital.com", password: "Test@123aa" } 
+ [LOGGER]  24-04-09 15:04:16  error : Error Error: Wrong credetials
+
+GraphQL request:2:5
+1 | mutation {
+2 |     login(
+  |     ^
+3 |         input: { email: "arpit.patel11111@acldigital.com", password: "Test@123aa" } 
+ [LOGGER]  24-04-09 15:04:80  error : Error Cannot query field "firstName" on type "Token".
+
+GraphQL request:7:13
+6 |         data {
+7 |             firstName
+  |             ^
+8 |             lastName 
+ [LOGGER]  24-04-09 15:04:80  error : Error Cannot query field "lastName" on type "Token".
+
+GraphQL request:8:13
+7 |             firstName
+8 |             lastName
+  |             ^
+9 |             name 
+ [LOGGER]  24-04-09 15:04:80  error : Error Cannot query field "name" on type "Token".
+
+GraphQL request:9:13
+ 8 |             lastName
+ 9 |             name
+   |             ^
+10 |             email 
+ [LOGGER]  24-04-09 15:04:80  error : Error Cannot query field "email" on type "Token".
+
+GraphQL request:10:13
+ 9 |             name
+10 |             email
+   |             ^
+11 |             token 
+ [LOGGER]  24-04-09 15:04:80  error : Error Cannot query field "profilePic" on type "Token".
+
+GraphQL request:12:13
+11 |             token
+12 |             profilePic
+   |             ^
+13 |             createdBy { 
+ [LOGGER]  24-04-09 15:04:80  error : Error Cannot query field "createdBy" on type "Token".
+
+GraphQL request:13:13
+12 |             profilePic
+13 |             createdBy {
+   |             ^
+14 |                 firstName 
+ [LOGGER]  24-04-09 15:04:92  error : Error Cannot query field "firstName" on type "Token".
+
+GraphQL request:7:13
+6 |         data {
+7 |             firstName
+  |             ^
+8 |             lastName 
+ [LOGGER]  24-04-09 15:04:93  error : Error Cannot query field "lastName" on type "Token".
+
+GraphQL request:8:13
+7 |             firstName
+8 |             lastName
+  |             ^
+9 |             name 
+ [LOGGER]  24-04-09 15:04:93  error : Error Cannot query field "name" on type "Token".
+
+GraphQL request:9:13
+ 8 |             lastName
+ 9 |             name
+   |             ^
+10 |             email 
+ [LOGGER]  24-04-09 15:04:93  error : Error Cannot query field "email" on type "Token".
+
+GraphQL request:10:13
+ 9 |             name
+10 |             email
+   |             ^
+11 |             token 
+ [LOGGER]  24-04-09 15:04:93  error : Error Cannot query field "profilePic" on type "Token".
+
+GraphQL request:12:13
+11 |             token
+12 |             profilePic
+   |             ^
+13 |             createdBy { 
+ [LOGGER]  24-04-09 15:04:93  error : Error Cannot query field "createdBy" on type "Token".
+
+GraphQL request:13:13
+12 |             profilePic
+13 |             createdBy {
+   |             ^
+14 |                 firstName 
+ [LOGGER]  24-04-09 15:04:74  error : Error Error: Wrong credetials
+
+GraphQL request:2:5
+1 | mutation {
+2 |     login(
+  |     ^
+3 |         input: { email: "arpit.patel11111@acldigital.com", password: "Test@123aa" } 
+ [LOGGER]  24-04-09 15:04:70  error : Error Expected value of type "createUser!", found null.
+
+GraphQL request:2:23
+1 | mutation UserCreate {
+2 |     UserCreate(input: null) {
+  |                       ^
+3 |         message 
+ [LOGGER]  24-04-09 15:04:22  error : Error Expected value of type "createUser!", found null.
+
+GraphQL request:2:23
+1 | mutation UserCreate {
+2 |     UserCreate(input: null) {
+  |                       ^
+3 |         message 
+ [LOGGER]  24-04-09 15:04:72  error : Error Cannot read properties of undefined (reading '_id')
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "test@yopmail.com" } 
+ [LOGGER]  24-04-09 15:04:13  error : Error Cannot read properties of undefined (reading '_id')
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "test@yopmail.com" } 
+ [LOGGER]  24-04-09 16:04:54  error : Error User Already Registered
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "test@yopmail.com" } 
+ [LOGGER]  24-04-09 16:04:08  error : Error User Already Registered
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "tes1t@yopmail.com" } 
+ [LOGGER]  24-04-09 16:04:76  error : Error User Already Registered
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "tes1t@yopmail.com" } 
+ [LOGGER]  24-04-09 16:04:10  error : Error User Already Registered
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "tes1t@yopmail.com" } 
+ [LOGGER]  24-04-09 16:04:88  error : Error User Already Registered
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "tes1t@yopmail.com" } 
+ [LOGGER]  24-04-09 16:04:58  error : Error User Already Registered
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "tes1t@yopmail.com" } 
+ [LOGGER]  24-04-09 16:04:09  error : Error User Already Registered
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "tes1t@yopmail.com" } 

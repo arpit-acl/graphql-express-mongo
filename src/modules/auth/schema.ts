@@ -1,8 +1,8 @@
 export default `
   
   extend type Mutation {
-    login(input: loginInput) : authResponse!
-    register(input: signupInput) : authResponse!
+    login(input: loginInput) : authResponse
+    register(input: signupInput) : authResponse
   }
 
   input loginInput {
@@ -17,7 +17,10 @@ export default `
 
   type authResponse {
     message: String
-    data: User!
+    data: Token
+  }
+  type Token {
+    token: String
   }
     
 `

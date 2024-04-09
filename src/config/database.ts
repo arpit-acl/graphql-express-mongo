@@ -1,13 +1,10 @@
 import { Logger } from '@config/logger'
 import { connect, Schema } from 'mongoose'
-const ObjectId = Schema.Types.ObjectId
 
 export interface BaseModel {
-	isDeleted: boolean
+	isDeleted?: boolean
 	createdAt?: Date
 	updatedAt?: Date
-	createdById?: typeof ObjectId
-	updatedById?: typeof ObjectId
 }
 
 export class Database {

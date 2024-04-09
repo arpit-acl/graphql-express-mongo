@@ -5,7 +5,7 @@ export default `
   }
   
   extend type Mutation {
-    create(input: createUser!) : UserResponse!
+    UserCreate(input: createUser!) : UserResponse!
   }
 
   type UserResponse {
@@ -14,18 +14,19 @@ export default `
   }
   
   type User {
+    _id: String
     firstName: String
     lastName: String
     name: String
     email: String
-    password: String
     token: String
+    profilePic: String
+    createdBy: User
   }
 
   input createUser {
     firstName: String
     lastName: String
     email: String
-    password: String
   }
 `

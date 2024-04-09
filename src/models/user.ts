@@ -1,20 +1,24 @@
-// import { App } from '@core/globals'
-import { Schema, model, Model, Document } from 'mongoose'
+import { Schema, model, Model, Document, ObjectId } from 'mongoose'
 import bcrypt from 'bcryptjs';
-// import { BaseModel } from '@core/database'
-// import { Password } from '@helpers/password'
 import config from '@config/config'
-import { App } from '@config/globals'
-const { ObjectId } = Schema.Types
+import { BaseModel } from '@config/database';
 
-export interface UserDoc {
-	firstName: string
-	lastName: string
-	email:string
-	password: string
-	token: string
+
+
+const { ObjectId } = Schema.Types
+export interface profileDoc {
+    _id? : ObjectId;
+	firstName? : string
+	lastName? : string
+	email :string
+	token? : string
+	profilePic?: string
+	createdBy?: ObjectId
 }
 
+export interface UserDoc extends profileDoc , BaseModel {
+	password: string
+}
 interface UserMethods {
 }
 
@@ -45,9 +49,22 @@ const UserSchema = new Schema<UserDoc, UserMethods, UserStatics>(
 		},
 		password: {
 			type: String,
+			select: false,
 			required: true
 		},
 		token: String,
+		profilePic: {
+			type: String,
+			default: ''
+		},
+		createdBy: {
+			type: ObjectId,
+			ref: 'users'
+		},
+		isDeleted: {
+			type: Boolean,
+			default: false,
+		},
 	},
 	{
 		collection: config.MODELS.USERS,

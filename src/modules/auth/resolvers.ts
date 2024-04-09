@@ -1,14 +1,9 @@
-import create from './resolvers/login';
+import login from './resolvers/login';
+import register from './resolvers/register';
 export const Query = {
-    userDetails : () => {
-        throw Error('Exception in user details fetch')
-    }
 }
 
 export const Mutation = {
-    create,
-}
-
-export const User = {
-    name: (userObj: { firstName: string; lastName: string }) => Promise.resolve(`${userObj.firstName} ${userObj.lastName}` )
+    login,
+    register,
 }
