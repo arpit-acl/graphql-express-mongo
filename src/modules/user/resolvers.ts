@@ -4,14 +4,16 @@ import { UserDoc } from '@models/user';
 
 
 export const Query = {
-    userDetails : async (__: any, input: any, context: any, ) => {
+    userDetails : async (__: any, input: any, context: any ) => {
         const user = await App.Model.User.findOne({email: context.user.email});
         return user
-    }
+    },
+
 }
 
 export const Mutation = {
     UserCreate,
+ 
 }
 
 export const User = {

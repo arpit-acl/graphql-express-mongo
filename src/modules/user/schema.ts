@@ -1,11 +1,14 @@
 export default `
+
+directive @isAuth on FIELD_DEFINITION 
+
   extend type Query {
     hello: String
-    userDetails: User!
+    userDetails: User! @isAuth
   }
   
   extend type Mutation {
-    UserCreate(input: createUser!) : UserResponse!
+    UserCreate(input: createUser!) : UserResponse! @isAuth
   }
 
   type UserResponse {
@@ -28,5 +31,11 @@ export default `
     firstName: String
     lastName: String
     email: String
+  }
+
+  input updateUser {
+    userId: String
+    firstName: String
+    lastName: String
   }
 `

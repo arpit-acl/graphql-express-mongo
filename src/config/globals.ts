@@ -7,5 +7,5 @@ export const App = {
         User,
     },
     messages,
-    config
+    config,
 }

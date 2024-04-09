@@ -334,3 +334,59 @@ GraphQL request:2:5
 2 |     UserCreate(
   |     ^
 3 |         input: { firstName: "Test", lastName: "Test", email: "tes1t@yopmail.com" } 
+ [LOGGER]  24-04-09 18:04:69  error : Error User Already Registered
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "tes11t1@yopmail.com" } 
+ [LOGGER]  24-04-09 18:04:15  error : Error User Already Registered
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "tes11t1@yopmail.com" } 
+ [LOGGER]  24-04-09 18:04:27  error : Error User Already Registered
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "tes11t1@yopmail.com" } 
+ [LOGGER]  24-04-09 18:04:64  error : Error User Already Registered
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "tes11t1@yopmail.com" } 
+ [LOGGER]  24-04-09 18:04:73  error : Error User Already Registered
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "tes11t1@yopmail.com" } 
+ [LOGGER]  24-04-09 18:04:66  error : Error User Already Registered
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "tes11t1@yopmail.com" } 
+ [LOGGER]  24-04-09 18:04:51  error : Error User Already Registered
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "tes11t1@yopmail.com" } 
+ [LOGGER]  24-04-09 18:04:85  error : Error Cannot read properties of undefined (reading 'email')
+
+GraphQL request:27:5
+26 | query UserDetails {
+27 |     userDetails {
+   |     ^
+28 |         firstName 

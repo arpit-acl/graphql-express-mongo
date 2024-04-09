@@ -22,6 +22,7 @@ import validateAuthUser from '@helpers/auth';
     return { message: err.message, statusCode: 500, name: 'Error' }
   };
 
+  console.log(Schema);
   app.all(
     "/graphql",
     createHandler({
