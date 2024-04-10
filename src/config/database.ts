@@ -14,8 +14,13 @@ export class Database {
 		this.url = url
 	}
 
-	async connect(): Promise<void> {
-		await connect(this.url.toString())
-		Logger.info('Database Connected Successfully')
+	async connect(): Promise<Boolean> {
+		try {
+			await connect(this.url.toString())
+			Logger.info('Database Connected Successfully')
+			return true;
+		}  catch (err: any) {
+			throw new Error('Database Connection Failed');
+		}
 	}
 }
