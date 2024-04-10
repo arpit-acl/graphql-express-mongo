@@ -390,3 +390,80 @@ GraphQL request:27:5
 27 |     userDetails {
    |     ^
 28 |         firstName 
+ [LOGGER]  24-04-09 18:04:93  error : Error User Already Registered
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "tes11t1@yopmail.com" } 
+ [LOGGER]  24-04-09 18:04:14  error : Error User Already Registered
+
+GraphQL request:2:5
+1 | mutation UserCreate {
+2 |     UserCreate(
+  |     ^
+3 |         input: { firstName: "Test", lastName: "Test", email: "tes11t1@yopmail.com" } 
+ [LOGGER]  24-04-09 18:04:89  error : Error Cannot read properties of undefined (reading 'email')
+
+GraphQL request:18:5
+17 | query UserDetails {
+18 |     userDetails {
+   |     ^
+19 |         _id 
+ [LOGGER]  24-04-09 18:04:08  error : Error Cannot read properties of undefined (reading 'email')
+
+GraphQL request:18:5
+17 | query UserDetails {
+18 |     userDetails {
+   |     ^
+19 |         _id 
+ [LOGGER]  24-04-09 19:04:56  error : Error Cannot read properties of undefined (reading 'email')
+
+GraphQL request:18:5
+17 | query UserDetails {
+18 |     userDetails {
+   |     ^
+19 |         _id 
+ [LOGGER]  24-04-10 10:04:17  error : Error Cannot read properties of undefined (reading 'email')
+
+GraphQL request:30:5
+29 | query UserDetails2 {
+30 |     userDetails {
+   |     ^
+31 |         _id 
+ [LOGGER]  24-04-10 10:04:10  error : Error Cannot read properties of undefined (reading 'email')
+
+GraphQL request:30:5
+29 | query UserDetails2 {
+30 |     userDetails {
+   |     ^
+31 |         _id 
+ [LOGGER]  24-04-10 11:04:46  error : Error Not Authorised!
+
+GraphQL request:30:5
+29 | query UserDetails2 {
+30 |     hello
+   |     ^
+31 | } 
+ [LOGGER]  24-04-10 11:04:33  error : Error Not Authorised!
+
+GraphQL request:30:5
+29 | query UserDetails2 {
+30 |     hello
+   |     ^
+31 | } 
+ [LOGGER]  24-04-10 11:04:64  error : Error Not Authorised!
+
+GraphQL request:30:5
+29 | query UserDetails2 {
+30 |     hello
+   |     ^
+31 | } 
+ [LOGGER]  24-04-10 11:04:67  error : Error Not Authorised!
+
+GraphQL request:30:5
+29 | query UserDetails2 {
+30 |     hello
+   |     ^
+31 | } 

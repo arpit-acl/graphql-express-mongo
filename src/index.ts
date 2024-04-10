@@ -1,10 +1,18 @@
 import express, { Request } from "express"
 import {createHandler}   from "graphql-http/lib/use/express"
+import path from 'path'
+
+if (path.extname(__filename) === '.js') {
+	require('module-alias/register')
+}
+
+
 import Schema from "@schema/index" 
 import bootstarpApp from "@config/bootstrap"
 import config from "@config/config"
 import { Logger } from "@config/logger"
 import validateAuthUser from '@helpers/auth';
+
 
 
 (async () => {
@@ -22,8 +30,7 @@ import validateAuthUser from '@helpers/auth';
     return { message: err.message, statusCode: 500, name: 'Error' }
   };
 
-  console.log(Schema);
-  app.all(
+   app.all(
     "/graphql",
     createHandler({
       rootValue: {},
