@@ -5,4 +5,5 @@ export default {
     USER_LOGIN: 'User Login Successfully',
     USER_ALREADY_REGISTERED: 'User Already Registered',
     USER_REGISTERED_SUCCESS: 'User Registred Successfully',
+    TOKEN_EXPIRED: 'Token Expired'
 }
