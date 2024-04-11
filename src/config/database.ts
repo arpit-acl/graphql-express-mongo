@@ -14,7 +14,7 @@ export class Database {
 		this.url = url
 	}
 
-	async connect(): Promise<Boolean> {
+	async connect() {
 		try {
 			await connect(this.url.toString())
 			Logger.info('Database Connected Successfully')
