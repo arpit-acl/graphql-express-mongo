@@ -14,7 +14,6 @@ import { Logger } from "@config/logger"
 import validateAuthUser from '@helpers/auth';
 
 
-
 (async () => {
   await bootstarpApp();
 

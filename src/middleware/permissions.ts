@@ -2,7 +2,7 @@ import { rule, shield, and, or, not } from "graphql-shield"
 
 // Rules
 
-const isAuthenticated = rule({ cache: "contextual" })(async (
+export const isAuthenticated = rule({ cache: "contextual" })(async (
   parent,
   args,
   ctx,

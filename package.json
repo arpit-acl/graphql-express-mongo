@@ -15,8 +15,10 @@
     "@graphql-tools/merge": "^9.0.3",
     "@graphql-tools/schema": "^10.0.3",
     "@graphql-tools/utils": "^10.1.2",
+    "@types/chai-http": "^4.2.0",
     "@types/graphql": "^14.5.0",
     "bcryptjs": "^2.4.3",
+    "chai-http": "^4.4.0",
     "cron": "^3.1.6",
     "express": "^4.19.2",
     "graphql": "^16.8.1",
@@ -25,6 +27,7 @@
     "graphql-shield": "^7.6.5",
     "graphql-tools": "^9.0.1",
     "jsonwebtoken": "^9.0.2",
+    "kafkajs": "^2.2.4",
     "lodash": "^4.17.21",
     "module-alias": "^2.2.3",
     "mongoose": "^8.3.0",
@@ -46,7 +49,7 @@
     "request": "^2.88.2",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.5"
   },
   "_moduleAliases": {
     "@module": "dist/modules",

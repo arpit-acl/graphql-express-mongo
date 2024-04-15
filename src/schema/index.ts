@@ -4,7 +4,7 @@ import userSchema from '@module/user/schema';
 import authSchema from '@module/auth/schema';
 import resolvers from './resolvers';
 import permissions from '@middlewares/permissions';
-
+// import { produceMessage } from '@helpers/kafka.producer';
 
 const defaultQuery = `
 
@@ -23,7 +23,10 @@ const defaultQuery = `
 `
 const defaultResolver = {
 	Query: {
-		ping: () => 'SUCCESS',
+		ping: async () => {
+			// await produceMessage()
+			return 'SUCCESS'
+		},
 	},
 	Mutation: {
 		ping: () => {

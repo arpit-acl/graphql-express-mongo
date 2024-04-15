@@ -6,6 +6,7 @@ export default async () => {
 
     // start cron jobs
     await loadCrons();
+
 }
 
 const dbConnection  = async () => {

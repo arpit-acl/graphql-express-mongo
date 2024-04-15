@@ -20,7 +20,7 @@ export class Database {
 			Logger.info('Database Connected Successfully')
 			return true;
 		}  catch (err: any) {
-			throw new Error('Database Connection Failed');
+			return false;
 		}
 	}
 }
