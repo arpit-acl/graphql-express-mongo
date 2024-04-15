@@ -14,7 +14,7 @@ import { Logger } from "@config/logger"
 import validateAuthUser from '@helpers/auth';
 
 
-(async () => {
+export const init = async () => {
   await bootstarpApp();
 
   const app = express()
@@ -40,11 +40,12 @@ import validateAuthUser from '@helpers/auth';
   )
   
   await startServer(app);
-})();
+  return true;
+}
 
 
 async function startServer(app: any) {
-    app.listen(config.PORT, config.HOST, () => {
-      Logger.info(`Server Started At ${config.HOST}:${config.PORT}`)
-    });
+    await app.listen(config.PORT, config.HOST);
+    Logger.info(`Server Started At ${config.HOST}:${config.PORT}`)
+    return true;
 }

@@ -1,10 +1,11 @@
 import 'mocha'
 import { Database } from '../../src/config/database';
 import { assert, expect } from 'chai';
+import config from '../../src/config/config';
 
 describe('Database connection Test', () => {
     it('Database Connection successfully', async function () {
-        const dbObj = new Database('mongodb://localhost:27017/graphql-demo');
+        const dbObj = new Database(config.DB_URL);
         const status = await dbObj.connect();
         expect(status).to.equal(true);
     });
