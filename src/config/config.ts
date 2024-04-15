@@ -7,6 +7,6 @@ export default  {
     },
     PORT: 4000,
     HOST: 'localhost',
-    DB_URL: 'mongodb+srv://arpitpatel:9kYvoCimXN3Xk3kw@cluster0.ebizdjy.mongodb.net/graphql-demo',
+    DB_URL: 'mongodb://192.168.6.162:27017/graphql-demo',
     JWT_SECRET: 'testsecret'
 }
